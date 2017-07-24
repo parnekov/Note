@@ -1,38 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools">
-    
 <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/selector_list"
+    android:clickable="true"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/list_item_note_title_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:background="@color/colorEditBackground"
-        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/material_margin"
+        android:layout_marginRight="@dimen/material_margin"
+        android:layout_marginTop="@dimen/material_margin"
         android:textColor="@android:color/black"
-        android:padding="12dp"
-        tools:text="Note Title"
-        />
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:text="Note Title"/>
+
     <TextView
         android:id="@+id/list_item_note_title_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="10dp"
-        android:paddingLeft="24dp"
-        android:background="@color/colorEditBackground"
+        android:layout_marginBottom="@dimen/material_margin"
+        android:layout_marginLeft="@dimen/material_margin"
+        android:layout_marginRight="@dimen/material_margin"
+        android:layout_marginTop="8dp"
         android:textColor="@android:color/black"
-
+        android:textSize="12sp"
         tools:text="Date"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/material_margin"
+        android:layout_marginRight="@dimen/material_margin"
+        android:background="@color/colorDivider"/>
+
 </LinearLayout>
-
-
-</RelativeLayout>

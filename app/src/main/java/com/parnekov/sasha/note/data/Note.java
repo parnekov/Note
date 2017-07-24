@@ -1,17 +1,24 @@
 package com.parnekov.sasha.note.data;
 
-import java.util.Date;
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.UUID;
 
-/**
- * Model
- */
+public class Note implements Parcelable {
 
-public class Note {
-    private UUID mId;
+    private String mId;
     private String mTitle;
     private String mContent;
     private String mDate;
+
+    public Note() {
+        this(UUID.randomUUID().toString());
+    }
+
+    public Note(String id) {
+        mId = id;
+    }
 
     public String getDate() {
         return mDate;
@@ -21,19 +28,11 @@ public class Note {
         mDate = date;
     }
 
-    public Note() {
-        this(UUID.randomUUID());
-    }
-
-    public Note(UUID id) {
-        mId = id;
-    }
-
-    public UUID getId() {
+    public String getId() {
         return mId;
     }
 
-    public void setId(UUID id) {
+    public void setId(String id) {
         mId = id;
     }
 
@@ -53,4 +52,35 @@ public class Note {
         mContent = content;
     }
 
+    protected Note(Parcel in) {
+        mId = in.readString();
+        mTitle = in.readString();
+        mContent = in.readString();
+        mDate = in.readString();
+    }
+
+    public static final Creator<Note> CREATOR = new Creator<Note>() {
+        @Override
+        public Note createFromParcel(Parcel in) {
+            return new Note(in);
+        }
+
+        @Override
+        public Note[] newArray(int size) {
+            return new Note[size];
+        }
+    };
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(mId);
+        parcel.writeString(mTitle);
+        parcel.writeString(mContent);
+        parcel.writeString(mDate);
+    }
 }

@@ -5,15 +5,11 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.provider.BaseColumns;
 
-/**
- * DB Helper
- */
-
-public class NoteDBHelper extends SQLiteOpenHelper {
+class NoteDBHelper extends SQLiteOpenHelper {
     private static final int VERSION = 1;
     private static final String DATABASE_NAME = "NoteBase.db";
 
-    public NoteDBHelper(Context context) {
+    NoteDBHelper(Context context) {
         super(context, DATABASE_NAME, null, VERSION);
     }
 
@@ -29,15 +25,15 @@ public class NoteDBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-//        db.execSQL("DROP TABLE IF EXISTS " + NAME);
-//        onCreate(db);
+        db.execSQL("DROP TABLE IF EXISTS " + NoteDBTable.NAME);
+        onCreate(db);
     }
 
-    public class NoteDBTable implements BaseColumns {
-        public static final String NAME = "notes";
-        public static final String UUID = "uuid";
-        public static final String TITLE = "title";
-        public static final String CONTENT = "content";
-        public static final String DATE = "date";
+    class NoteDBTable implements BaseColumns {
+        static final String NAME = "notes";
+        static final String UUID = "uuid";
+        static final String TITLE = "title";
+        static final String CONTENT = "content";
+        static final String DATE = "date";
     }
 }

@@ -10,5 +10,5 @@
     <string name="delete_note">Remove Note</string>
     <string name="save_note">Remove Note</string>
     <string name="new_note">Нова замітка</string>
-
+    <string name="button_description">Button for Save</string>
 </resources>

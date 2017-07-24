@@ -5,20 +5,15 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.parnekov.sasha.note.data.NoteDBHelper.NoteDBTable;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import com.parnekov.sasha.note.data.NoteDBHelper.*;
-
-/**
- * NoteLab
- */
-
 public class NoteLab {
-    private static NoteLab sNoteLab;
 
-    private Context mContext;
+    private static NoteLab sNoteLab;
     private SQLiteDatabase mDatabase;
 
     public static NoteLab getNoteLab(Context context) {
@@ -28,10 +23,9 @@ public class NoteLab {
         return sNoteLab;
     }
 
-
     private NoteLab(Context context) {
-        mContext = context.getApplicationContext();
-        mDatabase = new NoteDBHelper(mContext).getWritableDatabase();
+        Context cont = context.getApplicationContext();
+        mDatabase = new NoteDBHelper(cont).getWritableDatabase();
 
     }
 
@@ -41,10 +35,10 @@ public class NoteLab {
     }
 
 
-    public void removeNote(UUID uuid) {
+    public void removeNote(String id) {
         mDatabase.delete(NoteDBTable.NAME,
                 NoteDBTable.UUID + " = ?",
-                new String[]{uuid.toString()});
+                new String[]{id});
     }
 
     public List<Note> getNotes() {
@@ -63,11 +57,11 @@ public class NoteLab {
 
     }
 
-    public Note getNote(UUID id) {
+    public Note getNote(String id) {
 
         NoteCursorWrapper cursor = queryNotes(
                 NoteDBTable.UUID + " = ?",
-                new String[]{id.toString()}
+                new String[]{id}
         );
         try {
             if (cursor.getCount() == 0) {
@@ -82,7 +76,7 @@ public class NoteLab {
 
 
     public void updateNote(Note note) {
-        String uuidString = note.getId().toString();
+        String uuidString = note.getId();
         ContentValues values = getContentValues(note);
         mDatabase.update(NoteDBTable.NAME, values, NoteDBTable.UUID + " = ?",
                 new String[]{uuidString});
@@ -90,7 +84,7 @@ public class NoteLab {
 
     private static ContentValues getContentValues(Note note) {
         ContentValues values = new ContentValues();
-        values.put(NoteDBTable.UUID, note.getId().toString());
+        values.put(NoteDBTable.UUID, note.getId());
         values.put(NoteDBTable.TITLE, note.getTitle());
         values.put(NoteDBTable.CONTENT, note.getContent());
         values.put(NoteDBTable.DATE, note.getDate());

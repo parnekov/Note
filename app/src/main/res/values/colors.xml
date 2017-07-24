@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#932c9b</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#4527A0</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorEditBackground">#b4eae6</color>
     <color name="colorDetailBackground">#8fc6a3</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorListClicker">#EEEEEE</color>
 
 </resources>
