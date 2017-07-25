@@ -11,4 +11,9 @@
     <string name="save_note">Remove Note</string>
     <string name="new_note">Нова замітка</string>
     <string name="button_description">Button for Save</string>
+
+
+    <string name="dialog_title">Do you want to discard changes?</string>
+    <string name="dialog_say_yes">YES</string>
+    <string name="dialog_say_no">NO</string>
 </resources>

@@ -3,6 +3,8 @@ package com.parnekov.sasha.note.data;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.UUID;
 
 public class Note implements Parcelable {
@@ -13,11 +15,9 @@ public class Note implements Parcelable {
     private String mDate;
 
     public Note() {
-        this(UUID.randomUUID().toString());
-    }
-
-    public Note(String id) {
-        mId = id;
+        mId = UUID.randomUUID().toString();
+        SimpleDateFormat format = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
+        mDate = format.format(new Date());
     }
 
     public String getDate() {

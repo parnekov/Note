@@ -1,8 +1,11 @@
 package com.parnekov.sasha.note.fragment;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.NavUtils;
+import android.support.v7.app.AlertDialog;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -12,17 +15,22 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.parnekov.sasha.note.R;
+import com.parnekov.sasha.note.activity.NoteActivity;
 import com.parnekov.sasha.note.data.Note;
 import com.parnekov.sasha.note.data.NoteLab;
 
-public class NoteFragment extends Fragment {
+public class NoteFragment extends Fragment implements NoteActivity.OnBackPressedListener {
 
     private static final String ARG_NOTE = "arg_note";
     private Note mNote;
     private EditText mEditTitle;
     private EditText mEditContent;
+
+    private String mTitle = "";
+    private String mContent = "";
 
     public static NoteFragment newInstance(Note note) {
         Bundle args = new Bundle();
@@ -56,8 +64,10 @@ public class NoteFragment extends Fragment {
         });
 
         if (mNote != null) {
-            mEditTitle.setText(mNote.getTitle());
-            mEditContent.setText(mNote.getContent());
+            mTitle = mNote.getTitle();
+            mEditTitle.setText(mTitle);
+            mContent = mNote.getContent();
+            mEditContent.setText(mContent);
         }
 
         mEditTitle.addTextChangedListener(new TextWatcher() {
@@ -103,21 +113,29 @@ public class NoteFragment extends Fragment {
             case R.id.menu_item_delete_note:
                 removeNote();
                 return true;
+            case android.R.id.home:
+                checkAndFinish();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 
     private void addOrUpdateNote() {
-        if (mNote == null) {
-            mNote = new Note();
-            mNote.setTitle(mEditTitle.getText().toString());
-            mNote.setContent(mEditContent.getText().toString());
-            NoteLab.getNoteLab(getActivity()).addNote(mNote);
+        String isEmpty = mEditTitle.getText().toString();
+        if (isEmpty.length() == 0) {
+            Toast.makeText(getActivity(), "Fill title", Toast.LENGTH_SHORT).show();
         } else {
-            NoteLab.getNoteLab(getActivity()).updateNote(mNote);
+            if (mNote == null) {
+                mNote = new Note();
+                mNote.setTitle(mEditTitle.getText().toString());
+                mNote.setContent(mEditContent.getText().toString());
+                NoteLab.getNoteLab(getActivity()).addNote(mNote);
+            } else {
+                NoteLab.getNoteLab(getActivity()).updateNote(mNote);
+            }
+            finishActivity();
         }
-        finishActivity();
     }
 
     private void removeNote() {
@@ -128,5 +146,41 @@ public class NoteFragment extends Fragment {
     private void finishActivity() {
         getActivity().setResult(Activity.RESULT_OK);
         getActivity().finish();
+    }
+
+    private void checkAndFinish() {
+        boolean title = mEditTitle.getText().toString().equals(mTitle);
+        boolean content = mEditContent.getText().toString().equals(mContent);
+        if (title && content){
+            NavUtils.navigateUpFromSameTask(getActivity());
+            getActivity().finish();
+        } else {
+            showDialog();
+        }
+    }
+
+    private void showDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle(getString(R.string.dialog_title));
+        builder.setPositiveButton(getString(R.string.dialog_say_yes), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+                NavUtils.navigateUpFromSameTask(getActivity());
+                getActivity().finish();
+            }
+        });
+        builder.setNegativeButton(getString(R.string.dialog_say_no), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        builder.show();
+    }
+
+    @Override
+    public void onBackPressed() {
+        checkAndFinish();
     }
 }
