@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_note">Füge deine erste Notiz hinzu!</string>
+    <string name="app_name">Hinweis</string>
+    <string name="button_description">Button für Speichern</string>
+    <string name="delete_note">Anmerkung entfernen</string>
+    <string name="dialog_info_close">OK</string>
+    <string name="dialog_info_developer">© Sasha Parnekov</string>
+    <string name="dialog_info_message">Einfache und bequeme App für Notizen jedes Mal.</string>
+    <string name="dialog_info_title">App-Informationen</string>
+    <string name="new_note">Neue Anmerkung</string>
+    <string name="note_details_hint">Schreiben Sie eine kurze Nachricht</string>
+    <string name="note_details_label">Beschreibung</string>
+    <string name="note_done_label">Erledigt!</string>
+    <string name="note_title_hint">Schreiben Sie den Namen der Notiz</string>
+    <string name="note_title_label">Name</string>
+    <string name="save_note">Sparen</string>
+    <string name="dialog_delete_no">Es gibt keine Notizen</string>
+    <string name="dialog_delete_note">Möchten Sie diese Notiz löschen?</string>
+    <string name="dialog_delete_note_no">Keine gespeicherte Notiz</string>
+    <string name="dialog_delete_title">Möchten Sie alle Notizen löschen?</string>
+    <string name="dialog_say_no">NEIN</string>
+    <string name="dialog_say_yes">JA</string>
+    <string name="dialog_title">Möchten Sie Änderungen abbrechen?</string>
+    <string name="email_menu">E-Mail schreiben</string>
+    <string name="email_subject">Hinweis App</string>
+    <string name="email_text_hello">Hallo Sasha</string>
+    <string name="feedback_menu">Schreiben Sie FeedBack</string>
+    <string name="info_menu">Über</string>
+    <string name="menu_delete">Alles löschen</string>
+    <string name="menu_more">Mehr</string>
+    <string name="note_title_fill">Titel füllen</string>
+    <string name="share_menu">Titel füllen</string>
+</resources>

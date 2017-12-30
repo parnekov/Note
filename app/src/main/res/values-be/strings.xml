@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_note">Дадаць першую ноту!</string>
+    <string name="app_name">Нататка</string>
+    <string name="button_description">Кнопка Захаваць</string>
+    <string name="delete_note">Выдаліць заўвагу</string>
+    <string name="dialog_info_close">Добра</string>
+    <string name="dialog_info_developer">\"© Саша Парнеков\"</string>
+    <string name="dialog_info_message">Простае і зручнае прыкладанне для запісу адзначае кожны раз.</string>
+    <string name="dialog_info_title">Інфармацыя аб дадатку</string>
+    <string name="new_note">Новую нататку</string>
+    <string name="note_details_hint">Напісаць кароткую запіску</string>
+    <string name="note_details_label">Апісанне</string>
+    <string name="note_done_label">Зроблена</string>
+    <string name="note_title_hint">Напішыце імя нататкі</string>
+    <string name="note_title_label">Імя</string>
+    <string name="save_note">Ашчаджаць</string>
+    <string name="share_menu">شارك</string>
+    <string name="dialog_delete_no">Там няма нататкаў</string>
+    <string name="dialog_delete_note">Вы хочаце выдаліць гэта нататка?</string>
+    <string name="dialog_delete_note_no">Няма захаваных банкнота</string>
+    <string name="dialog_delete_title">Вы хочаце, каб выдаліць усе нататкі</string>
+    <string name="dialog_say_no">НЕ</string>
+    <string name="dialog_say_yes">ДА</string>
+    <string name="dialog_title">Вы хочаце адмяніць змены?</string>
+    <string name="email_menu">Напісаць E-mail</string>
+    <string name="email_subject">Заўвага прыкладання</string>
+    <string name="feedback_menu">напісаць FeedBack</string>
+    <string name="email_text_hello">Добры дзень Аляксандр</string>
+    <string name="info_menu">аб</string>
+    <string name="menu_delete">Выдаліць усе</string>
+    <string name="menu_more">больш</string>
+    <string name="note_title_fill">напоўніце назву</string>
+</resources>

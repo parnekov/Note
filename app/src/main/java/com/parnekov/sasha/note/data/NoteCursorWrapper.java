@@ -3,6 +3,7 @@ package com.parnekov.sasha.note.data;
 import android.database.Cursor;
 import android.database.CursorWrapper;
 
+import com.parnekov.sasha.note.Note;
 import com.parnekov.sasha.note.data.NoteDBHelper.NoteDBTable;
 
 public class NoteCursorWrapper extends CursorWrapper {

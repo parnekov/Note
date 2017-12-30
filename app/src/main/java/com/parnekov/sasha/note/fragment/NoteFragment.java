@@ -1,6 +1,7 @@
 package com.parnekov.sasha.note.fragment;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,6 +9,7 @@ import android.support.v4.app.NavUtils;
 import android.support.v7.app.AlertDialog;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -17,10 +19,12 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.parnekov.sasha.note.Note;
 import com.parnekov.sasha.note.R;
 import com.parnekov.sasha.note.activity.NoteActivity;
-import com.parnekov.sasha.note.data.Note;
 import com.parnekov.sasha.note.data.NoteLab;
+import com.parnekov.sasha.note.util.MenuUtils;
+import com.yalantis.contextmenu.lib.ContextMenuDialogFragment;
 
 public class NoteFragment extends Fragment implements NoteActivity.OnBackPressedListener {
 
@@ -31,6 +35,9 @@ public class NoteFragment extends Fragment implements NoteActivity.OnBackPressed
 
     private String mTitle = "";
     private String mContent = "";
+
+    private ContextMenuDialogFragment mContextMenu;
+    private Context mContext;
 
     public static NoteFragment newInstance(Note note) {
         Bundle args = new Bundle();
@@ -45,6 +52,8 @@ public class NoteFragment extends Fragment implements NoteActivity.OnBackPressed
         super.onCreate(savedInstanceState);
         mNote = getArguments().getParcelable(ARG_NOTE);
         setHasOptionsMenu(true);
+        mContext = getActivity();
+        mContextMenu = MenuUtils.setupMenu(mContext);
     }
 
     @Override
@@ -111,7 +120,13 @@ public class NoteFragment extends Fragment implements NoteActivity.OnBackPressed
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_item_delete_note:
-                removeNote();
+                if (mNote == null) {
+                    Toast toast = Toast.makeText(getActivity(), getString(R.string.dialog_delete_note_no), Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 0, 0);
+                    toast.show();
+                } else {
+                    removeOneNoteDialog();
+                }
                 return true;
             case android.R.id.home:
                 checkAndFinish();
@@ -124,7 +139,10 @@ public class NoteFragment extends Fragment implements NoteActivity.OnBackPressed
     private void addOrUpdateNote() {
         String isEmpty = mEditTitle.getText().toString();
         if (isEmpty.length() == 0) {
-            Toast.makeText(getActivity(), "Fill title", Toast.LENGTH_SHORT).show();
+            Toast toast = Toast.makeText(getActivity(), mContext.getString(R.string.note_title_fill), Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.CENTER, 0, 0);
+            toast.show();
+
         } else {
             if (mNote == null) {
                 mNote = new Note();
@@ -143,6 +161,25 @@ public class NoteFragment extends Fragment implements NoteActivity.OnBackPressed
         finishActivity();
     }
 
+    private void removeOneNoteDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle(getActivity().getString(R.string.dialog_delete_note));
+        builder.setPositiveButton((getActivity().getString(R.string.dialog_say_yes)), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                removeNote();
+                dialog.dismiss();
+            }
+        });
+        builder.setNegativeButton(getActivity().getString(R.string.dialog_say_no), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        builder.show();
+    }
+
     private void finishActivity() {
         getActivity().setResult(Activity.RESULT_OK);
         getActivity().finish();
@@ -151,7 +188,7 @@ public class NoteFragment extends Fragment implements NoteActivity.OnBackPressed
     private void checkAndFinish() {
         boolean title = mEditTitle.getText().toString().equals(mTitle);
         boolean content = mEditContent.getText().toString().equals(mContent);
-        if (title && content){
+        if (title && content) {
             NavUtils.navigateUpFromSameTask(getActivity());
             getActivity().finish();
         } else {

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_note">أضف أول ملاحظة!</string>
+    <string name="app_name">ملحوظة</string>
+    <string name="button_description">زر لحفظ</string>
+    <string name="delete_note">إزالة ملاحظة</string>
+    <string name="dialog_info_close">حسنا</string>
+    <string name="dialog_info_developer">© ساشا بارنيكوف</string>
+    <string name="dialog_info_message">بسيطة ومريحة التطبيق لكتابة الملاحظات في كل مرة.</string>
+    <string name="dialog_info_title">معلومات التطبيق</string>
+    <string name="new_note">ملاحظة جديدة</string>
+    <string name="note_details_hint">اكتب ملاحظة قصيرة</string>
+    <string name="note_details_label">وصف</string>
+    <string name="note_done_label">فعله</string>
+    <string name="note_title_hint">اكتب اسم الملاحظة</string>
+    <string name="note_title_label">اسم</string>
+    <string name="save_note">حفظ</string>
+    <string name="dialog_delete_no">لا توجد ملاحظات</string>
+    <string name="dialog_delete_note">هل تريد حذف هذه الملاحظة؟</string>
+    <string name="dialog_delete_note_no">لم يتم حفظ ملاحظة</string>
+    <string name="dialog_delete_title">هل تريد حذف جميع الملاحظات؟</string>
+    <string name="dialog_say_no">لا</string>
+    <string name="dialog_say_yes">نعم فعلا</string>
+    <string name="dialog_title">هل تريد إلغاء التغييرات؟</string>
+    <string name="email_menu">اكتب بريدا الكترونيا</string>
+    <string name="email_subject">ملاحظة التطبيق</string>
+    <string name="email_text_hello">مرحبا أوليكساندر</string>
+    <string name="feedback_menu">كتابة فيدباك</string>
+    <string name="info_menu">حول</string>
+    <string name="menu_delete">حذف الكل</string>
+    <string name="menu_more">أكثر من</string>
+    <string name="note_title_fill">عنوان التعبئة</string>
+    <string name="share_menu">شارك</string>
+</resources>

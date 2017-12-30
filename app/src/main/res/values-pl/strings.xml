@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_note">Dodaj swoją pierwszą notatkę!</string>
+    <string name="app_name">Nota</string>
+    <string name="button_description">Przycisk do zapisywania</string>
+    <string name="delete_note">Usuń notatkę</string>
+    <string name="dialog_info_close">OK</string>
+    <string name="dialog_info_developer">© Sasha Parnekov</string>
+    <string name="dialog_info_message">Prosta i wygodna aplikacja do zapisywania notatek za każdym razem.</string>
+    <string name="dialog_info_title">Informacje o aplikacji</string>
+    <string name="new_note">Nowa uwaga</string>
+    <string name="note_details_hint">Napisz krótką notatkę</string>
+    <string name="note_details_label">Opis</string>
+    <string name="note_title_hint">Napisz nazwę notatki</string>
+    <string name="note_done_label">Gotowe</string>
+    <string name="note_title_label">Nazwa</string>
+    <string name="save_note">Zapisać</string>
+    <string name="dialog_delete_no">Nie ma notatek</string>
+    <string name="dialog_delete_note">Czy chcesz usunąć tę notatkę?</string>
+    <string name="dialog_delete_note_no">Brak zapisanej notatki</string>
+    <string name="dialog_delete_title">Czy chcesz usunąć wszystkie notatki?</string>
+    <string name="dialog_say_no">NIE</string>
+    <string name="dialog_say_yes">TAK</string>
+    <string name="dialog_title">Czy chcesz anulować zmiany?</string>
+    <string name="email_menu">Napisz e-mail</string>
+    <string name="email_subject">Uwaga App</string>
+    <string name="email_text_hello">Witaj Oleksandr</string>
+    <string name="feedback_menu">Napisz odsyłacz</string>
+    <string name="info_menu">O</string>
+    <string name="menu_delete">Usuń wszystko</string>
+    <string name="menu_more">Jeszcze</string>
+    <string name="note_title_fill">Wypełnij tytuł</string>
+    <string name="share_menu">Dzielić</string>
+</resources>

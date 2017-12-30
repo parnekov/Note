@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 
 import com.parnekov.sasha.note.R;
-import com.parnekov.sasha.note.data.Note;
+import com.parnekov.sasha.note.Note;
 import com.parnekov.sasha.note.fragment.NoteFragment;
 
 public class NoteActivity extends AppCompatActivity {
@@ -39,13 +39,12 @@ public class NoteActivity extends AppCompatActivity {
     }
 
 
-
     @Override
     public void onBackPressed() {
         FragmentManager fm = getSupportFragmentManager();
         OnBackPressedListener backPressedListener = null;
-        for (Fragment fragment: fm.getFragments()) {
-            if (fragment instanceof  OnBackPressedListener) {
+        for (Fragment fragment : fm.getFragments()) {
+            if (fragment instanceof OnBackPressedListener) {
                 backPressedListener = (OnBackPressedListener) fragment;
                 break;
             }

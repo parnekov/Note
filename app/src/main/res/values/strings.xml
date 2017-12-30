@@ -1,19 +1,57 @@
 <resources>
     <string name="app_name">Note</string>
     <string name="add_note">Add your first note!</string>
-    <string name="note_title_hint">Напишіть назву замітки</string>
-    <string name="note_title_label">Назва</string>
-    <string name="note_details_label">Опис</string>
-    <string name="note_details_hint">Напитіть коротку замітку</string>
-    <string name="note_done_label">Виконано!</string>
-    <string name="close_app">Close App</string>
-    <string name="delete_note">Remove Note</string>
-    <string name="save_note">Remove Note</string>
-    <string name="new_note">Нова замітка</string>
+    <string name="feedback_menu">Write FeedBack</string>
+    <string name="new_note">New Note</string>
     <string name="button_description">Button for Save</string>
+    <string name="image_button" translatable="false">Image Button Save</string>
+
+    <!--edit form strings-->
+    <string name="note_title_hint">Write a name note</string>
+    <string name="note_title_label">Name</string>
+    <string name="note_title_fill">Fill title</string>
+    <string name="note_details_label">Description</string>
+    <string name="note_details_hint">Write a short note</string>
+    <string name="note_done_label">Done!</string>
+    <string name="delete_note">Remove Note</string>
+
+    <string name="save_note">Save</string>
 
 
-    <string name="dialog_title">Do you want to discard changes?</string>
+    <!--menu form strings-->
+    <string name="menu_delete">Delete All</string>
+    <string name="menu_more">More</string>
+
+    <!--dialogs strings-->
     <string name="dialog_say_yes">YES</string>
     <string name="dialog_say_no">NO</string>
+
+    <!--dialog delete all strings-->
+    <string name="dialog_delete_title">Do you want to delete all notes?</string>
+    <string name="dialog_delete_no">There is no notes</string>
+
+    <!--dialog discard changes strings-->
+    <string name="dialog_title">Do you want to cancel changes?</string>
+    <string name="dialog_delete_note">Do you want to delete this note?</string>
+    <string name="dialog_delete_note_no">No saved note</string>
+
+    <!--dialog info about strings-->
+    <string name="dialog_info_title">App information</string>
+    <string name="dialog_info_version" translatable="false">v1.0</string>
+    <string name="dialog_info_message">Simple and convenient App for write notes every time.</string>
+    <string name="dialog_info_developer">© by Sasha Parnekov</string>
+    <string name="dialog_fb_url" translatable="false">https://www.facebook.com/o.parnekov</string>
+    <string name="dialog_app_url" translatable="false">https://play.google.com/store/apps/details?id=com.parnekov.sasha.note</string>
+    <string name="dialog_info_close">OK</string>
+
+
+    <!--menu strings-->
+    <string name="info_menu">About</string>
+    <string name="share_menu">Share</string>
+    <string name="email_menu">Write Email</string>
+    <string name="email_address" translatable="false">oleksandr.parnekov@gmail.com</string>
+    <string name="email_subject">Note App</string>
+    <string name="email_text_hello">Hello Oleksandr
+
+</string>
 </resources>

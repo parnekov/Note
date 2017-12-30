@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_note">添加您的第一個音符！</string>
+    <string name="app_name">注意</string>
+    <string name="button_description">保存按鈕</string>
+    <string name="delete_note">刪除註釋</string>
+    <string name="dialog_info_message">簡單方便的應用程序每次寫筆記。</string>
+    <string name="dialog_info_close">好</string>
+    <string name="dialog_info_developer">© Sasha Parnekov</string>
+    <string name="dialog_info_title">應用信息</string>
+    <string name="new_note">新註</string>
+    <string name="note_details_hint">寫一個簡短的筆記</string>
+    <string name="note_details_label">描述</string>
+    <string name="note_done_label">完成</string>
+    <string name="note_title_hint">寫下筆記的名字</string>
+    <string name="note_title_label">名稱</string>
+    <string name="save_note">保存</string>
+    <string name="share_menu">分享</string>
+    <string name="note_title_fill">填写标题</string>
+    <string name="menu_more">Fill title</string>
+    <string name="menu_delete">删除所有</string>
+    <string name="info_menu">关于</string>
+    <string name="feedback_menu">写反馈</string>
+    <string name="email_text_hello">你好Oleksandr</string>
+    <string name="email_subject">注意应用程序</string>
+    <string name="email_menu">写电子邮件</string>
+    <string name="dialog_title">要取消更改吗？</string>
+    <string name="dialog_say_yes">是</string>
+    <string name="dialog_say_no">没有</string>
+    <string name="dialog_delete_title">要删除所有笔记吗？</string>
+    <string name="dialog_delete_note_no">没有保存的笔记</string>
+    <string name="dialog_delete_note">要删除此笔记吗？</string>
+    <string name="dialog_delete_no">没有笔记</string>
+</resources>

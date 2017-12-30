@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nota</string>
+    <string name="add_note">Adicione sua primeira nota!</string>
+    <string name="button_description">Botão para Salvar</string>
+    <string name="delete_note">Remover nota</string>
+    <string name="dialog_info_close">OK</string>
+    <string name="dialog_info_developer">© de Sasha Parnekov</string>
+    <string name="dialog_info_message">Aplicação simples e conveniente para escrever notas de cada vez.</string>
+    <string name="dialog_info_title">Informações da aplicação</string>
+    <string name="new_note">Nova nota</string>
+    <string name="note_details_hint">Escreva uma nota curta</string>
+    <string name="note_details_label">Descrição</string>
+    <string name="note_done_label">Feito!</string>
+    <string name="note_title_hint">Escreva o nome da nota</string>
+    <string name="note_title_label">Nome</string>
+    <string name="save_note">Salve</string>
+    <string name="share_menu">Compartilhar</string>
+    <string name="note_title_fill">Preencha o título</string>
+    <string name="menu_more">Mais</string>
+    <string name="menu_delete">Apagar tudo</string>
+    <string name="info_menu">Sobre</string>
+    <string name="feedback_menu">Escreva FeedBack</string>
+    <string name="email_text_hello">Olá Oleksandr</string>
+    <string name="email_subject">Note App</string>
+    <string name="email_menu">Escreva um email</string>
+    <string name="dialog_title">Deseja cancelar as alterações?</string>
+    <string name="dialog_say_yes">SIM</string>
+    <string name="dialog_say_no">NÃO</string>
+    <string name="dialog_delete_title">Deseja excluir todas as notas?</string>
+    <string name="dialog_delete_note_no">Nenhuma nota guardada</string>
+    <string name="dialog_delete_note">Deseja excluir esta nota?</string>
+    <string name="dialog_delete_no">Não há notas</string>
+</resources>

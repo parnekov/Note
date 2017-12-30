@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_note">Add your first note!</string>
+    <string name="app_name">Notă</string>
+    <string name="button_description">Buton pentru salvare</string>
+    <string name="delete_note">Eliminați Notă</string>
+    <string name="dialog_info_close">O.K</string>
+    <string name="dialog_info_developer">© Sasha Parnekov</string>
+    <string name="dialog_info_message">Aplicație simplă și convenabilă pentru notele de scriere de fiecare dată.</string>
+    <string name="dialog_info_title">Informații despre aplicație</string>
+    <string name="new_note">Notă nouă</string>
+    <string name="note_details_hint">Scrieți o notă scurtă</string>
+    <string name="note_details_label">Descriere</string>
+    <string name="note_done_label">Terminat</string>
+    <string name="note_title_hint">Scrieți numele notei</string>
+    <string name="note_title_label">Nume</string>
+    <string name="save_note">Salvați</string>
+    <string name="dialog_delete_no">Nu există note</string>
+    <string name="dialog_delete_note">Doriți să ștergeți această notă?</string>
+    <string name="dialog_delete_note_no">Nu există o notă salvată</string>
+    <string name="dialog_delete_title">Doriți să ștergeți toate notele?</string>
+    <string name="dialog_say_no">NU</string>
+    <string name="dialog_say_yes">DA</string>
+    <string name="dialog_title">Doriți să anulați modificările?</string>
+    <string name="email_menu">Scrieți un e-mail</string>
+    <string name="email_subject">Notă App</string>
+    <string name="email_text_hello">Bună ziua Oleksandr</string>
+    <string name="feedback_menu">Scrie FeedBack</string>
+    <string name="info_menu">Despre</string>
+    <string name="menu_delete">Sterge tot</string>
+    <string name="menu_more">Mai Mult</string>
+    <string name="note_title_fill">Completați titlul</string>
+    <string name="share_menu">Acțiune</string>
+</resources>

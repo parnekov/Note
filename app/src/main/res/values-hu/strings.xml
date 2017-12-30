@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_note">Adja meg első megjegyzését!</string>
+    <string name="app_name">Hangjegy</string>
+    <string name="button_description">Gomb a mentéshez</string>
+    <string name="delete_note">Megjegyzés eltávolítása</string>
+    <string name="dialog_info_close">Rendben</string>
+    <string name="dialog_info_developer">© Sasha Parnekov</string>
+    <string name="dialog_info_message">Egyszerű és kényelmes Alkalmazás írási jegyzetekre minden alkalommal.</string>
+    <string name="dialog_info_title">Az alkalmazás információi</string>
+    <string name="new_note">Új megjegyzés</string>
+    <string name="note_details_hint">Írj rövid jegyzetet</string>
+    <string name="note_details_label">Leírás</string>
+    <string name="note_done_label">Kész</string>
+    <string name="note_title_hint">Írja be a jegyzet nevét</string>
+    <string name="note_title_label">Név</string>
+    <string name="save_note">Mentés</string>
+    <string name="share_menu">Ossza meg</string>
+    <string name="menu_more">Több</string>
+    <string name="note_title_fill">Cím kitöltése</string>
+    <string name="menu_delete">Mindet törölni</string>
+    <string name="info_menu">Ról ről</string>
+    <string name="feedback_menu">Írjon visszajelzést</string>
+    <string name="email_text_hello">Hello Oleksandr</string>
+    <string name="email_subject">Megjegyzés App</string>
+    <string name="email_menu">Írjon e-mailt</string>
+    <string name="dialog_title">Törölni kívánja a változtatásokat?</string>
+    <string name="dialog_say_yes">IGEN</string>
+    <string name="dialog_say_no">NEM</string>
+    <string name="dialog_delete_title">Szeretné törölni az összes jegyzetet?</string>
+    <string name="dialog_delete_no">Nincsenek megjegyzések</string>
+    <string name="dialog_delete_note_no">Nincs mentett megjegyzés</string>
+    <string name="dialog_delete_note">Szeretné törölni ezt a megjegyzést?</string>
+</resources>

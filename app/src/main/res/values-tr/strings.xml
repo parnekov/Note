@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_note">İlk notunuzu ekleyin!</string>
+    <string name="app_name">Not</string>
+    <string name="note_title_hint">Notun adını yazın</string>
+    <string name="note_title_label">Isim</string>
+    <string name="note_done_label">Tamam</string>
+    <string name="note_details_label">Açıklama</string>
+    <string name="note_details_hint">Kısa not yazın</string>
+    <string name="new_note">Yeni Not</string>
+    <string name="dialog_info_title">Uygulama bilgileri</string>
+    <string name="dialog_info_message">Her zaman not yazmak için basit ve kullanışlı bir uygulama.</string>
+    <string name="dialog_info_developer">© Sasha Parnekov</string>
+    <string name="dialog_info_close">OK</string>
+    <string name="button_description">Kaydet düğmesi</string>
+    <string name="delete_note">Notu Kaldır</string>
+    <string name="save_note">Kayıt etmek</string>
+    <string name="dialog_delete_no">Not yok</string>
+    <string name="dialog_delete_note">Bu notu silmek istiyor musun?</string>
+    <string name="dialog_delete_note_no">Kaydedilmiş not yok</string>
+    <string name="dialog_delete_title">Tüm notları silmek istiyor musunuz?</string>
+    <string name="dialog_say_no">Yok hayır</string>
+    <string name="dialog_say_yes">EVET</string>
+    <string name="dialog_title">Değişiklikleri iptal etmek istiyor musunuz?</string>
+    <string name="email_menu">E-posta Yaz</string>
+    <string name="email_subject">Uygula Not</string>
+    <string name="email_text_hello">Merhaba Oleksandr</string>
+    <string name="feedback_menu">FeedBack yaz</string>
+    <string name="info_menu">Hakkında</string>
+    <string name="menu_delete">Hepsini sil</string>
+    <string name="menu_more">Daha</string>
+    <string name="note_title_fill">Başlığı doldur</string>
+    <string name="share_menu">Pay</string>
+</resources>

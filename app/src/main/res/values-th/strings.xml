@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_note">เพิ่มโน้ตตัวแรกของคุณ!</string>
+    <string name="app_name">บันทึก</string>
+    <string name="button_description">ปุ่มสำหรับบันทึก</string>
+    <string name="delete_note">นำหมายเหตุออก</string>
+    <string name="dialog_info_close">ตกลง</string>
+    <string name="dialog_info_developer">Sasha Parnekov ©</string>
+    <string name="dialog_info_message">โปรแกรมประยุกต์ที่ง่ายและสะดวกสำหรับการเขียนบันทึกทุกครั้ง</string>
+    <string name="dialog_info_title">ข้อมูลแอป</string>
+    <string name="new_note">บันทึกใหม่</string>
+    <string name="note_details_hint">เขียนโน้ตสั้น ๆ</string>
+    <string name="note_details_label">ลักษณะ</string>
+    <string name="note_title_hint">เขียนชื่อของโน้ต</string>
+    <string name="note_done_label">เสร็จสิ้น</string>
+    <string name="save_note">บันทึก</string>
+    <string name="note_title_label">ชื่อ</string>
+    <string name="share_menu">หุ้น</string>
+    <string name="note_title_fill">กรอกชื่อ</string>
+    <string name="menu_more">มากกว่า</string>
+    <string name="menu_delete">ลบทั้งหมด</string>
+    <string name="info_menu">เกี่ยวกับ</string>
+    <string name="feedback_menu">เขียนรีวิว</string>
+    <string name="email_text_hello">สวัสดี Oleksandr</string>
+    <string name="email_subject">หมายเหตุ App</string>
+    <string name="email_menu">เขียนอีเมล</string>
+    <string name="dialog_title">คุณต้องการยกเลิกการเปลี่ยนแปลงหรือไม่?</string>
+    <string name="dialog_say_yes">ใช่</string>
+    <string name="dialog_say_no">ไม่</string>
+    <string name="dialog_delete_note_no">ไม่มีบันทึกที่บันทึกไว้</string>
+    <string name="dialog_delete_title">คุณต้องการลบบันทึกย่อทั้งหมดหรือไม่?</string>
+    <string name="dialog_delete_note">คุณต้องการลบบันทึกนี้หรือไม่?</string>
+    <string name="dialog_delete_no">ไม่มีบันทึกย่อ</string>
+</resources>

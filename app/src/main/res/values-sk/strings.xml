@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_note">Pridajte svoju prvú poznámku!</string>
+    <string name="app_name">Poznámka</string>
+    <string name="button_description">Tlačidlo pre uloženie</string>
+    <string name="delete_note">Odstrániť poznámku</string>
+    <string name="dialog_info_close">OK</string>
+    <string name="dialog_info_developer">© Sasha Parnekov</string>
+    <string name="dialog_info_message">Jednoduché a pohodlné aplikácie pre písanie poznámok zakaždým.</string>
+    <string name="dialog_info_title">Informácie o aplikácii</string>
+    <string name="new_note">Nová poznámka</string>
+    <string name="note_details_hint">Napíšte krátku poznámku</string>
+    <string name="note_details_label">Popis</string>
+    <string name="note_done_label">Hotový</string>
+    <string name="note_title_hint">Napíšte názov poznámky</string>
+    <string name="note_title_label">Názov</string>
+    <string name="save_note">Uložiť</string>
+    <string name="dialog_delete_no">Neexistujú žiadne poznámky</string>
+    <string name="dialog_delete_note">Chcete túto poznámku odstrániť?</string>
+    <string name="dialog_delete_note_no">Žiadna uložená poznámka</string>
+    <string name="dialog_delete_title">Chcete odstrániť všetky poznámky?</string>
+    <string name="dialog_say_no">NO</string>
+    <string name="dialog_say_yes">ÁNO</string>
+    <string name="dialog_title">Chcete zrušiť zmeny?</string>
+    <string name="email_menu">Napíšte e-mail</string>
+    <string name="email_subject">Poznámka aplikácia</string>
+    <string name="email_text_hello">Dobrý deň Oleksandr</string>
+    <string name="feedback_menu">Napíšte FeedBack</string>
+    <string name="info_menu">O</string>
+    <string name="menu_delete">Vymazať všetko</string>
+    <string name="menu_more">Viac</string>
+    <string name="note_title_fill">Vyplňte názov</string>
+    <string name="share_menu">Zdieľam</string>
+</resources>

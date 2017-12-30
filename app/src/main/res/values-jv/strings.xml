@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_note">Tambah cathetan pisanan sampeyan!</string>
+    <string name="app_name">Catetan</string>
+    <string name="button_description">Tombol kanggo Simpen</string>
+    <string name="delete_note">Mbusak Wigati</string>
+    <string name="dialog_info_close">OK</string>
+    <string name="dialog_info_developer">© by Sasha Parnekov</string>
+    <string name="dialog_info_message">App prasaja lan trep kanggo nulis cathetan saben wektu.</string>
+    <string name="dialog_info_title">Informasi aplikasi</string>
+    <string name="new_note">Cathetan Anyar</string>
+    <string name="note_details_hint">Tulis cathetan singkat</string>
+    <string name="note_details_label">Gambaran</string>
+    <string name="note_done_label">Rampung!</string>
+    <string name="note_title_hint">Tulis jeneng cathetan</string>
+    <string name="note_title_label">Jeneng</string>
+    <string name="save_note">Simpen</string>
+    <string name="dialog_delete_no">Ora ana cathetan</string>
+    <string name="dialog_delete_note">Aja pengin mbusak cathetan iki?</string>
+    <string name="dialog_delete_note_no">Ora ana cathetan sing disimpen</string>
+    <string name="dialog_delete_title">Sampeyan pengin mbusak kabeh cathetan?</string>
+    <string name="dialog_say_no">Ora Ana</string>
+    <string name="dialog_say_yes">Ya</string>
+    <string name="dialog_title">Sampeyan pengin mbatalake owahan?</string>
+    <string name="email_menu">Tulis Email</string>
+    <string name="email_subject">Wigati App</string>
+    <string name="email_text_hello">Hello Oleksandr</string>
+    <string name="feedback_menu">Tulis FeedBack</string>
+    <string name="info_menu">Prakawis</string>
+    <string name="menu_delete">Hapus kabeh</string>
+    <string name="menu_more">Liyane</string>
+    <string name="note_title_fill">Ngisi judhul</string>
+    <string name="share_menu">Nuduhake</string>
+</resources>

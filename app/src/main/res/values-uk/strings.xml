@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Блокнот</string>
+    <string name="add_note">Напишіть свою першу замітку!</string>
+    <string name="button_description">Кнопка Зберегти</string>
+    <string name="delete_note">Видалити замітку</string>
+    <string name="dialog_info_close">ОК</string>
+    <string name="new_note">Нова замітка</string>
+    <string name="dialog_info_developer">\"© Саша Парнєков\"</string>
+    <string name="dialog_info_message">Простий і зручний додаток для записування заміток, які завжди під рукою.</string>
+    <string name="dialog_info_title">Інформація про додаток</string>
+    <string name="note_details_hint">Напишіть коротку замітку</string>
+    <string name="note_details_label">Опис</string>
+    <string name="note_done_label">Готово!</string>
+    <string name="note_title_hint">Назвіть замітку</string>
+    <string name="note_title_label">Назва</string>
+    <string name="save_note">Зберегти</string>
+    <string name="share_menu">Поширити</string>
+    <string name="menu_more">Більше</string>
+    <string name="note_title_fill">Заповніть назву</string>
+    <string name="menu_delete">Видалити все</string>
+    <string name="info_menu">Інфо</string>
+    <string name="feedback_menu">Написати відгук</string>
+    <string name="email_text_hello">Привіт Саша</string>
+    <string name="email_subject">Додаток Блокнот</string>
+    <string name="email_menu">Написати e-mail</string>
+    <string name="dialog_title">Ви хочете скасувати зміни?</string>
+    <string name="dialog_say_yes">ТАК</string>
+    <string name="dialog_say_no">НІ</string>
+    <string name="dialog_delete_title">Ви хочете стерти всі нотатки?</string>
+    <string name="dialog_delete_note_no">Немає збереженої нотатки</string>
+    <string name="dialog_delete_note">Ви хочете видалити цю нотатку?</string>
+    <string name="dialog_delete_no">Немає нотаток</string>
+</resources>

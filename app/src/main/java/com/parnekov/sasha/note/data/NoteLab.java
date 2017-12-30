@@ -5,11 +5,11 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.parnekov.sasha.note.Note;
 import com.parnekov.sasha.note.data.NoteDBHelper.NoteDBTable;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 public class NoteLab {
 
@@ -41,6 +41,10 @@ public class NoteLab {
                 new String[]{id});
     }
 
+    public void removeAllNotes() {
+        if (mDatabase != null) mDatabase.delete(NoteDBTable.NAME, null, null);
+    }
+
     public List<Note> getNotes() {
         List<Note> notes = new ArrayList<>();
         NoteCursorWrapper cursor = queryNotes(null, null);
@@ -56,24 +60,6 @@ public class NoteLab {
         return notes;
 
     }
-
-    public Note getNote(String id) {
-
-        NoteCursorWrapper cursor = queryNotes(
-                NoteDBTable.UUID + " = ?",
-                new String[]{id}
-        );
-        try {
-            if (cursor.getCount() == 0) {
-                return null;
-            }
-            cursor.moveToFirst();
-            return cursor.getNote();
-        } finally {
-            cursor.close();
-        }
-    }
-
 
     public void updateNote(Note note) {
         String uuidString = note.getId();

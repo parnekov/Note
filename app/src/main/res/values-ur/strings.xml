@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_note">اپنا پہلا نوٹ شامل کریں!</string>
+    <string name="app_name">نوٹ</string>
+    <string name="button_description">بٹن محفوظ کریں</string>
+    <string name="delete_note">نوٹ ہٹا دیں</string>
+    <string name="dialog_info_close">ٹھیک ہے</string>
+    <string name="dialog_info_developer">© ساشا پرنیکوف</string>
+    <string name="dialog_info_message">ہر بار نوٹ لکھنے کے لئے سادہ اور آسان اپلی کیشن.</string>
+    <string name="dialog_info_title">ایپ کی معلومات</string>
+    <string name="new_note">نیا نوٹ</string>
+    <string name="note_details_hint">ایک مختصر نوٹ لکھیں</string>
+    <string name="note_details_label">تفصیل</string>
+    <string name="note_done_label">ہو گیا</string>
+    <string name="note_title_hint">نوٹ کا نام لکھیں</string>
+    <string name="note_title_label">نام</string>
+    <string name="save_note">محفوظ کریں</string>
+    <string name="dialog_delete_no">کوئی نوٹ نہیں ہے</string>
+    <string name="dialog_delete_note">کیا آپ یہ نوٹ حذف کرنا چاہتے ہیں؟</string>
+    <string name="dialog_delete_note_no">محفوظ کردہ نوٹ نہیں</string>
+    <string name="dialog_delete_title">کیا آپ سبھی نوٹوں کو حذف کرنا چاہتے ہیں؟</string>
+    <string name="dialog_say_no">نہیں</string>
+    <string name="dialog_say_yes">ہاں</string>
+    <string name="dialog_title">کیا آپ تبدیلیاں منسوخ کرنا چاہتے ہیں؟</string>
+    <string name="email_menu">ای میل لکھیں</string>
+    <string name="email_subject">ایپ نوٹ کریں</string>
+    <string name="email_text_hello">ہیلو اوکسکینڈر</string>
+    <string name="feedback_menu">فیڈ بیک لکھیں</string>
+    <string name="info_menu">کے بارے میں</string>
+    <string name="menu_delete">تمام حذف کریں</string>
+    <string name="menu_more">مزید</string>
+    <string name="note_title_fill">عنوان بھریں</string>
+    <string name="share_menu">اشتراک کریں</string>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_note">첫 번째 메모를 추가하십시오!</string>
+    <string name="app_name">노트</string>
+    <string name="button_description">저장 버튼</string>
+    <string name="delete_note">메모 삭제</string>
+    <string name="dialog_info_close">승인</string>
+    <string name="dialog_info_developer">Sasha Parnekov ©</string>
+    <string name="dialog_info_message">매번 메모를 작성하기위한 간단하고 편리한 응용 프로그램입니다.</string>
+    <string name="dialog_info_title">앱 정보</string>
+    <string name="new_note">새 메모</string>
+    <string name="note_details_hint">짧은 메모 작성</string>
+    <string name="note_details_label">기술</string>
+    <string name="note_done_label">끝난!</string>
+    <string name="note_title_hint">메모 이름 작성</string>
+    <string name="note_title_label">이름</string>
+    <string name="save_note">구하다</string>
+    <string name="share_menu">몫</string>
+    <string name="note_title_fill">제목 채우기</string>
+    <string name="menu_more">더</string>
+    <string name="menu_delete">모두 삭제</string>
+    <string name="info_menu">약</string>
+    <string name="feedback_menu">피드 백 쓰기</string>
+    <string name="email_text_hello">안녕하세요 올렉산드르</string>
+    <string name="email_subject">메모 앱</string>
+    <string name="email_menu">이메일 작성</string>
+    <string name="dialog_title">변경 사항을 취소 하시겠습니까?</string>
+    <string name="dialog_say_yes">예</string>
+    <string name="dialog_say_no">아니</string>
+    <string name="dialog_delete_title">모든 메모를 삭제 하시겠습니까?</string>
+    <string name="dialog_delete_note_no">저장된 메모 없음</string>
+    <string name="dialog_delete_note">이 메모를 삭제 하시겠습니까?</string>
+    <string name="dialog_delete_no">메모가 없습니다</string>
+</resources>

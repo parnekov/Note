@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_note">Ajoutez votre première note!</string>
+    <string name="app_name">Remarque</string>
+    <string name="button_description">Bouton pour économiser</string>
+    <string name="delete_note">Supprimer la note</string>
+    <string name="dialog_info_close">D\'accord</string>
+    <string name="dialog_info_developer">© Sasha Parnekov</string>
+    <string name="dialog_info_message">Une application simple et pratique pour écrire des notes à chaque fois.</string>
+    <string name="dialog_info_title">Informations sur l\'application</string>
+    <string name="new_note">Nouvelle note</string>
+    <string name="note_details_hint">Écrivez une note courte</string>
+    <string name="note_details_label">La description</string>
+    <string name="note_done_label">Terminé!</string>
+    <string name="note_title_hint">Écrivez le nom de la note</string>
+    <string name="note_title_label">Prénom</string>
+    <string name="save_note">Sauvegarder</string>
+    <string name="dialog_delete_no">Il n\'y a pas de notes</string>
+    <string name="dialog_delete_note">Voulez-vous supprimer cette note?</string>
+    <string name="dialog_delete_note_no">Pas de note enregistrée</string>
+    <string name="dialog_delete_title">Voulez-vous supprimer toutes les notes</string>
+    <string name="dialog_say_no">NON</string>
+    <string name="dialog_say_yes">OUI</string>
+    <string name="dialog_title">Voulez-vous annuler les modifications?</string>
+    <string name="email_menu">Écrire un email</string>
+    <string name="email_subject">Note App</string>
+    <string name="email_text_hello">Hello Oleksandr</string>
+    <string name="feedback_menu">Ecrire FeedBack</string>
+    <string name="info_menu">Sur</string>
+    <string name="menu_delete">Supprimer tout</string>
+    <string name="menu_more">Plus</string>
+    <string name="note_title_fill">Remplir le titre</string>
+    <string name="share_menu">Share</string>
+</resources>

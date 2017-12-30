@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_note">あなたの最初のメモを追加してください！</string>
+    <string name="app_name">注意</string>
+    <string name="button_description">保存のためのボタン</string>
+    <string name="delete_note">ノートを削除</string>
+    <string name="dialog_info_close">はい</string>
+    <string name="dialog_info_developer">© Sasha Parnekov</string>
+    <string name="dialog_info_message">毎回メモを書くためのシンプルで便利なアプリ。</string>
+    <string name="dialog_info_title">アプリ情報</string>
+    <string name="new_note">新しいノート</string>
+    <string name="note_details_hint">短いメモを書く</string>
+    <string name="note_details_label">説明</string>
+    <string name="note_done_label">完了</string>
+    <string name="note_title_hint">ノートの名前を書いてください</string>
+    <string name="note_title_label">名</string>
+    <string name="save_note">セーブ</string>
+    <string name="dialog_delete_no">メモがありません</string>
+    <string name="dialog_delete_note">このメモを削除しますか？</string>
+    <string name="dialog_delete_note_no">保存したメモがありません</string>
+    <string name="dialog_delete_title">すべてのメモを削除しますか？</string>
+    <string name="dialog_say_no">いいえ</string>
+    <string name="dialog_say_yes">はい</string>
+    <string name="dialog_title">変更をキャンセルしますか？</string>
+    <string name="email_menu">電子メールを書く</string>
+    <string name="email_subject">メモアプリ</string>
+    <string name="email_text_hello">こんにちはオレクサンドル</string>
+    <string name="feedback_menu">フィードバックを書く</string>
+    <string name="info_menu">約</string>
+    <string name="menu_delete">すべて削除</string>
+    <string name="menu_more">もっと</string>
+    <string name="note_title_fill">塗りつぶしのタイトル</string>
+    <string name="share_menu">シェア</string>
+</resources>
