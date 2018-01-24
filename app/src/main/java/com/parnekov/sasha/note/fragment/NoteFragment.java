@@ -26,12 +26,19 @@ import com.parnekov.sasha.note.data.NoteLab;
 import com.parnekov.sasha.note.util.MenuUtils;
 import com.yalantis.contextmenu.lib.ContextMenuDialogFragment;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class NoteFragment extends Fragment implements NoteActivity.OnBackPressedListener {
+
+    @BindView(R.id.note_title)
+    EditText mEditTitle;
+
+    @BindView(R.id.note_details)
+    EditText mEditContent;
 
     private static final String ARG_NOTE = "arg_note";
     private Note mNote;
-    private EditText mEditTitle;
-    private EditText mEditContent;
 
     private String mTitle = "";
     private String mContent = "";
@@ -58,13 +65,13 @@ public class NoteFragment extends Fragment implements NoteActivity.OnBackPressed
 
     @Override
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_note, container, false);
+        View view = inflater.inflate(R.layout.fragment_note, container, false);
+        ButterKnife.bind(this, view);
+        return view;
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-        mEditTitle = (EditText) view.findViewById(R.id.note_title);
-        mEditContent = (EditText) view.findViewById(R.id.note_details);
         view.findViewById(R.id.button_save).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

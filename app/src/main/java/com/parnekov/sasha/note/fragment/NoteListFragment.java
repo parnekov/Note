@@ -6,7 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
@@ -36,13 +35,27 @@ import com.yalantis.contextmenu.lib.interfaces.OnMenuItemClickListener;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class NoteListFragment extends Fragment implements NoteAdapter.OnNoteClickListener, OnMenuItemClickListener {
+    @BindView(R.id.empty_view)
+    LinearLayout mEmptyView;
+
+    @BindView(R.id.note_recycler_view)
+    RecyclerView noteRecyclerView;
+
+    @OnClick(R.id.fab)
+    public void addNew(){
+        Intent intent = new Intent(getActivity(), NoteActivity.class);
+        startActivityForResult(intent, REQUEST_CODE);
+    }
 
     public static final int REQUEST_CODE = 111;
     private ContextMenuDialogFragment mContextMenu;
     private Context mContext;
     private NoteAdapter mNoteAdapter;
-    private LinearLayout mEmptyView;
     private List<Note> mNotes;
 
     @Override
@@ -57,7 +70,9 @@ public class NoteListFragment extends Fragment implements NoteAdapter.OnNoteClic
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_note_list, container, false);
+        View view = inflater.inflate(R.layout.fragment_note_list, container, false);
+        ButterKnife.bind(this, view);
+        return view;
     }
 
     @Override
@@ -89,8 +104,6 @@ public class NoteListFragment extends Fragment implements NoteAdapter.OnNoteClic
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
-        mEmptyView = (LinearLayout) view.findViewById(R.id.empty_view);
-        RecyclerView noteRecyclerView = (RecyclerView) view.findViewById(R.id.note_recycler_view);
         noteRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         ItemTouchHelper touchHelper = new ItemTouchHelper(new OnSwipeCallback());
@@ -100,15 +113,6 @@ public class NoteListFragment extends Fragment implements NoteAdapter.OnNoteClic
         mNotes = noteLab.getNotes();
         mNoteAdapter = new NoteAdapter(getActivity(), mNotes, this);
         noteRecyclerView.setAdapter(mNoteAdapter);
-
-        FloatingActionButton actionButton = (FloatingActionButton) view.findViewById(R.id.fab);
-        actionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), NoteActivity.class);
-                startActivityForResult(intent, REQUEST_CODE);
-            }
-        });
 
         checkList();
     }
