@@ -9,6 +9,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
 
     private Context mContext;
@@ -44,14 +47,15 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
     }
 
     public class NoteHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        @BindView(R.id.list_item_note_title_text_view)
+        TextView mTitleTextView;
 
-        private TextView mTitleTextView;
-        private TextView mDateTextView;
+        @BindView(R.id.list_item_note_title_date)
+        TextView mDateTextView;
 
         NoteHolder(View itemView) {
             super(itemView);
-            mTitleTextView = (TextView) itemView.findViewById(R.id.list_item_note_title_text_view);
-            mDateTextView = (TextView) itemView.findViewById(R.id.list_item_note_title_date);
+            ButterKnife.bind(this, itemView);
             itemView.setOnClickListener(this);
         }
 
