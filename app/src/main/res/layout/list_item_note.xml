@@ -15,7 +15,7 @@
         android:layout_marginLeft="@dimen/material_margin"
         android:layout_marginRight="@dimen/material_margin"
         android:layout_marginTop="@dimen/material_margin"
-        android:textColor="#842848"
+        android:textColor="@color/colorTextTitleList"
         android:textSize="22sp"
         android:textStyle="bold"
         tools:text="Note Title"/>
