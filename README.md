@@ -19,7 +19,7 @@ Simple app for notes.
 0.01
 ## Built With
 * Android Studio
-* Kotlin
+* Java
 
 ## How to install
 Check available apk file into [realises](https://github.com/parnekov/Note/releases).
